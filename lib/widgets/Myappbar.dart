@@ -120,6 +120,30 @@ class _MyAppBarState extends State<MyAppBar> {
               )
             ]),
       )),
+      actions: [
+        Padding(
+          padding: const EdgeInsets.only(top: 12, right: 12),
+          child: InkWell(
+            onTap: Scaffold.of(context).openEndDrawer,
+            child: SizedBox(
+              width: 34,
+              height: 34,
+              child: Image.asset('assets/rewards.png'),
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(top: 12, right: 12),
+          child: InkWell(
+            onTap: Scaffold.of(context).openEndDrawer,
+            child: SizedBox(
+              width: 34,
+              height: 34,
+              child: Image.asset('assets/logo.png'),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
